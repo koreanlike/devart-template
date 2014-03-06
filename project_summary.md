@@ -1,33 +1,38 @@
-# Project Title
-Insert the name of your project
-
-## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+# Voicing Type
+## Author
+- Daeik Kim
+- Hyo Jun Park
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+Thanks to great softwares with advanced Graphic User Interface to design typefaces, number of digital fonts has increased extensively and been more available for people. However, as people started using more digital fonts in digital environments, users have slowly lost their own handwriting styles that once refelected themselves and brought joy of writing. Voicing Type is a project eagers to lower bars to design characteristic digital typefaces by using people's individual voice, and to help people having and using their own digital fonts that contain their voices.
 
-## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
+Voicing Type started and submitted as a final project of Visual Programming class, one of Hongik University(in South Korea)'s interactive media design lectures. The project was proposed and developed to explorer unconventional ways of designing typefaces; real time audio inputs, specifically voices of people and sounds of various environments, are used to modify existing fonts for this project to contain sounds in generated fonts.
 
-[Example Link](http://www.google.com "Example Link")
+Initially, Voicing Type was built on Processing(Java) environment, but to make Voicing Type more be accessible by ranges of people, web-based technologies, such as HTML5 audio API and SVG, will be used to rebuild and to improve Voicing Type as a web application.
+
+## Problems that Voicing Type faced: 
+Expected outputs were originally inspired from generative typographic designs, but yet usable tyepfaces daily basis.
 
 ## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
+```javascript
+//Fetch a web font(.ttf) to generate font object
+var url = "http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxg89PwPrYLaRFJ-HNCU9NbA.ttf";
+var voicingType = new VoicingType();
+voicingType.loadFont(url);
 ```
-function test() {
-  console.log("Printing a test");
-}
-```
-## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
 
+## Links to External Libraries
 [Example Link](http://www.google.com "Example Link")
+[Google Web Font API](https://developers.google.com/apis-explorer/#p/webfonts/v1/)
+[Opentype.js](https://github.com/nodebox/opentype.js)
+[Snap.svg](http://snapsvg.io/)
+[Angular.js](http://angularjs.org/)
+[Express.js](http://expressjs.com/)
+[MongoDB](http://www.mongodb.org/)
 
 ## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
 
 ![Example Image](project_images/cover.jpg?raw=true "Example Image")
 
 https://www.youtube.com/watch?v=30yGOxJJ2PQ
+
