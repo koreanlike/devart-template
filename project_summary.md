@@ -24,7 +24,6 @@ voicingType.loadFont(url);
 
 ## Links to External Libraries
 
-[Example Link](http://www.google.com "Example Link")
 [Google Web Font API](https://developers.google.com/apis-explorer/#p/webfonts/v1/)
 [Opentype.js](https://github.com/nodebox/opentype.js)
 [Snap.svg](http://snapsvg.io/)
