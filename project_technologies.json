@@ -1,16 +1,23 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "Google Web Font"
         ],
         "platforms": [
-            "insert platforms"
+            "Web"
         ],
         "toolkits": [
-            "insert toolkits"
+            "Node.js",
+            "MongoDB",
+            "Angular.js",
+            "opentype.js",
+            "Snap.svg"
         ]
     },
     "themes": [
-        "insert themes"
+        "Fonts",
+        "Typography",
+        "Typeface",
+        "Generative Design"
     ]
 }
