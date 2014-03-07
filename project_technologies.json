@@ -7,11 +7,10 @@
             "Web"
         ],
         "toolkits": [
-            "Node.js",
-            "MongoDB",
-            "Angular.js",
             "opentype.js",
-            "Snap.svg"
+            "Snap.svg",
+            "JavaScript",
+            "Processing"
         ]
     },
     "themes": [
