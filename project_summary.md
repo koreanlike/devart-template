@@ -1,7 +1,7 @@
 # Voicing Type
 
 ## Authors
-- Daeik Kim
+Daeik Kim
 
 ## Description
 
@@ -10,6 +10,9 @@ Thanks to great softwares with advanced Graphic User Interface to design typefac
 Voicing Type started and submitted as a final project of Visual Programming class, one of Hongik University(in South Korea)'s interactive media design lectures. The project was proposed and developed to explorer unconventional ways of designing typefaces; real time audio inputs, specifically voices of people and sounds of various environments, are used to modify existing fonts for this project to contain sounds in generated fonts.
 
 Initially, Voicing Type was built on Processing(Java) environment, but to make Voicing Type more be accessible by ranges of people, web-based technologies, such as HTML5 audio API and SVG, will be used to rebuild and to improve Voicing Type as a web application.
+
+
+## Link to Prototype
 
 
 ## Example Code
@@ -30,3 +33,6 @@ voicingType.loadFont(url);
 [Angular.js](http://angularjs.org/)
 [Express.js](http://expressjs.com/)
 [MongoDB](http://www.mongodb.org/)
+
+
+## Images & Videos
