@@ -2,8 +2,6 @@
 
 ## Authors
 - Daeik Kim
-- Hyo Jun Park
-- Se Jong Kang
 
 ## Description
 
