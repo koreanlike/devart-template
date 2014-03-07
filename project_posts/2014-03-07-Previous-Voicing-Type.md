@@ -15,7 +15,7 @@ First algorithm to modify typefaces via a voice was inspired from [applyForce me
 - Export the modified typeface
 
 
-## And.. Voicing Type's First Version
+## And.. First Version of Voicing Type
 ![Voicing Type Application](../project_images/VoicingType-000.png?raw=true "Voicing Type Application")
 A series of different type mofidication algorithms was tested, and I managed to choose an algorithm to develop Voicing Type further. GUI has been designed and developed to make users be able to interact with the application, though I believe GUI was not sufficient enough, and finally Voicing Type was operable.
 
