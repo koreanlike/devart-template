@@ -30,9 +30,3 @@ voicingType.loadFont(url);
 [Angular.js](http://angularjs.org/)
 [Express.js](http://expressjs.com/)
 [MongoDB](http://www.mongodb.org/)
-
-
-## Images & Videos
-
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
-
