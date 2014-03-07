@@ -2,7 +2,7 @@
 
 ## Sketch and Ideation
 
-![First Sketch for Voicing Type](project_images/sketch-000.jpg?raw=true "First Sketch for Voicing Type")
+![First Sketch for Voicing Type](../project_images/sketch-000.jpg?raw=true "First Sketch for Voicing Type")
 
 This first sketch was to explore the methods that can be used to map audio information to a character's shape and nodes. Base font was planned to be Helvetica, which has been widely used and has straightforward outlines.
 
