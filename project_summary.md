@@ -1,8 +1,7 @@
 # Voicing Type
 ## Daeik Kim
 
-## Authors
-- Daeik Kim
+## Credits
 - Hyo Jun Park
 - Se Jong Kang
 
