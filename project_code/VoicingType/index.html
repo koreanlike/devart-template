@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		#svg {
+/*			width: 500px;
+			height: 500px;*/
+		}
+	</style>
+
+	<script src="script/vendor/opentype.js"></script>
+	<script src="script/vendor/snap.svg-min.js"></script>
+	<script src="script/vendor/underscore.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="script/voicingtype.main.js"></script>
+
+	<script>
+
+	$(document).ready(function() {
+
+		var url = "http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxg89PwPrYLaRFJ-HNCU9NbA.ttf";
+		var voicingType = new VoicingType();
+		voicingType.setContainer(document.getElementById('svg'));
+		voicingType.loadFont(url);
+
+	});
+
+	</script>
+
+</head>
+<body>
+
+	<svg id="svg"></svg>
+
+</body>
+</html>

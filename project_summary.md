@@ -1,11 +1,13 @@
 # Voicing Type
-## Author
-- Daeik Kim
+## Daeik Kim
+
+## Credits
 - Hyo Jun Park
+- Se Jong Kang
 
 ## Description
 
-Thanks to great softwares with advanced Graphic User Interface to design typefaces, number of digital fonts has increased extensively and been more available for people. However, as people started using more digital fonts in digital environments, users have slowly lost their own handwriting styles that once refelected themselves and brought joy of writing. Voicing Type is a project eagers to lower bars to design characteristic digital typefaces by using people's individual voice, and to help people having and using their own digital fonts that contain their voices.
+Thanks to great softwares with advanced Graphic User Interface to design typefaces, number of digital fonts has increased extensively and been more available for people. However, as people started using more digital fonts in digital environments, users have slowly lost their own handwriting styles that once refelected themselves and brought joy of writing. Voicing Type is a project eagers to lower bars to design characteristic digital typefaces by using people's individual voice, and to help people having and using their own digital fonts in True Type Font format that contain their voices.
 
 Voicing Type started and submitted as a final project of Visual Programming class, one of Hongik University(in South Korea)'s interactive media design lectures. The project was proposed and developed to explorer unconventional ways of designing typefaces; real time audio inputs, specifically voices of people and sounds of various environments, are used to modify existing fonts for this project to contain sounds in generated fonts.
 
