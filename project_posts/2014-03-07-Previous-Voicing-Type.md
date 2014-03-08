@@ -3,7 +3,7 @@
 ## Type Modification
 
 ![Character Modification with applyForce function](../project_images/M.png?raw=true "Character Modification with applyForce function")
-First algorithm to modify typefaces via a voice was inspired from [applyForce method](https://vimeo.com/channels/natureofcode/59028634) described in 'The Nature of Code', Daniel Shiffman's book. Since a voice is a physical force consists of the frequency spectrum, power, and intensity, using applyForce method to apply different forces to each node(point) in a character was valid approach. 
+Initial algorithm to modify typefaces via a voice was inspired from [applyForce method](https://vimeo.com/channels/natureofcode/59028634) described in 'The Nature of Code', Daniel Shiffman's book. Since a voice is a physical force consists of the frequency spectrum, power, and intensity, using applyForce method to apply different forces to each node(point) in a character was a valid approach. 
 
 
 ## The Very First Type Modification Algorithm:
@@ -17,7 +17,7 @@ First algorithm to modify typefaces via a voice was inspired from [applyForce me
 
 ## And.. First Version of Voicing Type
 ![Voicing Type Application](../project_images/VoicingType-000.png?raw=true "Voicing Type Application")
-A series of different type mofidication algorithms was tested, and I could choose an algorithm to develop Voicing Type further. GUI has been designed and developed to make users be able to interact with the application, though I believe GUI was not sufficient enough, and finally Voicing Type was operable.
+A series of different type modification algorithms was tested, and I could choose an algorithm to develop Voicing Type further. GUI has been designed and developed to make users be able to interact with the application, though I believe GUI was not sufficient enough, and finally Voicing Type was operable.
 
 
 ## Voicing Type in Action
