@@ -5,7 +5,7 @@
 	<title>Document</title>
 
 	<style>
-		#svg {
+		svg {
 /*			width: 500px;
 			height: 500px;*/
 		}
@@ -21,10 +21,9 @@
 	<script>
 
 	$(document).ready(function() {
-
 		var url = "http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxg89PwPrYLaRFJ-HNCU9NbA.ttf";
 		var voicingType = new VoicingType();
-		voicingType.setContainer(document.getElementById('svg'));
+		// voicingType.setContainer(document.getElementById('svg'));
 		voicingType.loadFont(url);
 
 	});
@@ -34,7 +33,8 @@
 </head>
 <body>
 
-	<svg id="svg"></svg>
+<!-- 	<svg id="svg"></svg>
+ -->
 
 </body>
 </html>

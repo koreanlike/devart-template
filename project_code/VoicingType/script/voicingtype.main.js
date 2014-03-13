@@ -1,11 +1,15 @@
 var VoicingType = (function(opentype, Snap, _) {
 
 	var VoicingType = function() {
+		this.API_KEY = 'AIzaSyCoIBI7DnbqEkjX1lI9wz4bx4h8tT60MBo';
+		this.webfontApiUrl = 'https://www.googleapis.com/webfonts/v1/webfonts?key='+this.API_KEY+'&sort=popularity';
+
 		this.container = null;
 		this.context = null;
+		this.availableFonts = null;
 		this.font = null;
-		this.fontSize = 80;
-		this.characters = [];
+		this.fontSize = 48;
+		this.characters = [ ];
 	}
 
 	VoicingType.prototype.setContainer = function(container) {
@@ -14,10 +18,59 @@ var VoicingType = (function(opentype, Snap, _) {
 	}
 
 	VoicingType.prototype.init = function() {
-		var path = this.getCharacterPath("ABCD");
+		var self = this;
+		var glyphs = [];
+		this.getFontList(function(fonts) {
+			// Loop through all the fonts
+			for (var i = 0; i < fonts.length; i++) {
+				var font = null;
+				if (fonts[i].files.regular != '') {
+					opentype.load(fonts[i].files.regular, function(err, loadedFont) {
+						if (loadedFont !== undefined) {
+							var context = Snap(100, 100);
+							font = loadedFont;
+							var path = font.getPath('a', 30, 60, self.fontSize);
+							var svgPath = self.pathToSvg(path.commands);
+							var character = context.path(svgPath);
+							character.attr({ fill: '#000' });
+						}
+					});
+				}
+			};
+		});
+	}
+
+	VoicingType.prototype.getFontList = function(callback) {
+		var self = this;
+		var req = new XMLHttpRequest();
+		req.open('GET', this.webfontApiUrl, true);
+		req.send(null);
+
+		req.onreadystatechange = function() {			
+			if (req.readyState == 4) {
+				if (req.status == 200) {
+					res = req.responseText;
+					var list = JSON.parse(res);
+					self.availableFonts = list.items;
+					callback(self.availableFonts);
+				}
+			}
+		}
+	}
+
+	VoicingType.prototype.loadFont = function(url) {
+		var self = this;
+		opentype.load(url, function(err, font) {
+			self.font = font;
+			// console.log(font);
+			self.init();
+		});
+	}
+
+	VoicingType.prototype.render = function() {
+		var path = this.getCharacterPath("x");
 		var character = this.context.path(this.pathToSvg(path.commands));
 		character.attr({ stroke: "#000" });
-
 	}
 
 	VoicingType.prototype.findModifiedCharacter = function(character) {
@@ -26,25 +79,15 @@ var VoicingType = (function(opentype, Snap, _) {
 		});
 	}
 
-	VoicingType.prototype.loadFont = function(url) {
-		var self = this;
-		opentype.load(url, function(err, font) {
-			self.font = font;
-			console.log(font);
-			self.init();
-		});
-	}
-
 	VoicingType.prototype.getCharacterPath = function(character) {
-		return this.font.getPath(character, 30, 100, this.fontSize);
+		return this.font.getPath(character, 30, 30, this.fontSize);
 	}
 
 	VoicingType.prototype.pathToSvg = function(path) {
 		var svgStr = "";
-		for (var i = 0; i < path.length; i++) {
+		for (var i = 0; i < path.length; i+=3) {
 			var point = path[i];
 			var type = point.type;
-
 			switch (type) {
 				case 'M':
 					svgStr += type + " " + point.x + "," + point.y + " ";
@@ -79,15 +122,11 @@ var VoicingType = (function(opentype, Snap, _) {
 				// case 'R':
 				// 	svgStr += type + " " + point.x + "," + point.y + " ";
 				// 	break;
-
 			}
 		}
 		return svgStr;
 	}
 
-	// 	// character.animate({
-	// 	// 	path: "M10,30L20,10L50,70Z"
-	// 	// }, 3000);
 
 	return VoicingType;
 
